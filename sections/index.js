@@ -7,6 +7,8 @@ import World from './World';
 import Insights from './Insights';
 import Feedback from './Feedback';
 import Skills from './Skills';
+import EndText from './EndText';
+import Contact from "./Contact";
 
 export {
   Hero,
@@ -15,7 +17,7 @@ export {
   Explore,
   GetStarted,
   WhatsNew,
-  World,
-  Insights,
+  EndText,
+  Contact,
   Feedback,
 };
