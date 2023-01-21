@@ -6,10 +6,12 @@ import WhatsNew from './WhatsNew';
 import World from './World';
 import Insights from './Insights';
 import Feedback from './Feedback';
+import Skills from './Skills';
 
 export {
   Hero,
   About,
+  Skills,
   Explore,
   GetStarted,
   WhatsNew,

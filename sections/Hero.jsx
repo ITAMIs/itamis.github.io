@@ -1,9 +1,36 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import styled from "styled-components";
 
-import styles from '../styles';
-import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+import styles from "../styles";
+import { slideIn, staggerContainer, textVariant } from "../utils/motion";
+
+const HomeImg = () => {
+  return (
+    <motion.div
+      className="bg-center bg-cover bg-no-repeat rounded-lg shadow-inset-0 shadow-md"
+      initial={{
+        borderRadius: "60% 40% 30% 70%/60% 30% 70% 40%",
+      }}
+      animate={{
+        borderRadius: [
+          "60% 40% 30% 70%/60% 30% 70% 40%",
+          "30% 60% 70% 40%/50% 60% 30% 60%",
+          "60% 40% 30% 70%/60% 30% 70% 40%",
+        ],
+        transition: { duration: 8, loop: Infinity, delay: 1 },
+      }}
+      style={{
+        backgroundImage: "url('https://placeimg.com/640/480/any')",
+        width: "500px",
+        height: "400px",
+        order: "1",
+        justifySelf: "center",
+      }}
+    ></motion.div>
+  );
+};
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
@@ -14,42 +41,16 @@ const Hero = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <div className="flex justify-center items-center flex-col relative z-10">
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          Sukhpal Singh
-        </motion.h1>
-        <motion.div
-          variants={textVariant(1.2)}
-          className="flex flex-row justify-center items-center"
-        >
-          <h1 className={styles.heroHeading}>Ma</h1>
-          <div className={styles.heroDText} />
-          <h1 className={styles.heroHeading}>Ness</h1>
-        </motion.div>
+
+      <div class="flex items-center justify-center mb-20">
+        <div class="flex flex-col px-4 mr-10">
+          <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
+            NAME
+          </motion.h1>
+        </div>
+        <motion.h1><HomeImg className="relative" /></motion.h1>
+        
       </div>
-
-      <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
-        className="relative w-full md:-mt-[20px] -mt-[12px]"
-      >
-        <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
-
-        <img
-          src="/cover.png"
-          alt="hero_cover"
-          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
-        />
-
-        <a href="#explore">
-          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
-            <img
-              src="/stamp.png"
-              alt="stamp"
-              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
-            />
-          </div>
-        </a>
-      </motion.div>
     </motion.div>
   </section>
 );

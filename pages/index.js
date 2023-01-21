@@ -1,5 +1,6 @@
+import { REACT_LOADABLE_MANIFEST } from 'next/dist/shared/lib/constants';
 import { Footer, Navbar } from '../components';
-import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
+import { About, Explore,  Feedback, GetStarted, Hero, Insights, Skills, WhatsNew, World } from '../sections';
 
 const Home = () => (
   <div className="bg-primary-black overflow-hidden">
@@ -7,6 +8,7 @@ const Home = () => (
     <Hero />
     <div className="relative">
       <About />
+      <Skills />
       <div className="gradient-03 z-0" />
       <Explore />
     </div>
@@ -14,12 +16,6 @@ const Home = () => (
       <GetStarted />
       <div className="gradient-04 z-0" />
       <WhatsNew />
-    </div>
-    <World />
-    <div className="relative">
-      <Insights />
-      <div className="gradient-04 z-0" />
-      <Feedback />
     </div>
     <Footer />
   </div>
