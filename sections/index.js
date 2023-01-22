@@ -17,7 +17,6 @@ export {
   Explore,
   GetStarted,
   WhatsNew,
-  EndText,
   Contact,
   Feedback,
 };

@@ -18,7 +18,6 @@ const Home = () => (
       <div className="gradient-04 z-0" />
       <WhatsNew />
     </div>
-    <EndText/>
     <Contact/>
     <Footer />
   </div>

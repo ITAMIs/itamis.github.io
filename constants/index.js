@@ -1,49 +1,58 @@
 export const exploreWorlds = [
   {
     id: 'world-1',
-    imgUrl: '/planet-01.png',
-    title: 'The Hogwarts',
+    imgUrl: '/landscape-1.png',
+    title: 'BLOG',
+    text: "In this, you'll find a couple of examples of the blogs I wrote, showcasing my ability to create engaging and informative content on a variety of topics.",
+    img: 'newspaper-b.svg',
   },
   {
     id: 'world-2',
-    imgUrl: '/planet-02.png',
-    title: 'The Upside Down',
+    imgUrl: '/landscape-2.png',
+    title: 'EMAIL',
+    text: "In this, you'll find a couple of email examples that I wrote, displaying my skills in crafting effective and persuasive communication for various audiences.",
+    img: 'mail-b.svg',
   },
   {
     id: 'world-3',
-    imgUrl: '/planet-03.png',
-    title: 'Kadirojo Permai',
+    imgUrl: '/landscape-3.png',
+    title: 'ADS',
+    text: "In this, you'll find a couple of Ad examples that I wrote, highlighting my proficiency in creating compelling and persuasive advertisements for various products or services.",
+    img: 'mega-b.svg',
   },
   {
     id: 'world-4',
-    imgUrl: '/planet-04.png',
-    title: 'Paradise Island',
+    imgUrl: '/landscape-4.png',
+    title: 'PAGES',
+    text: "In this, you'll find a couple of examples of different pages I wrote such as landing, sales, opt-in and etc..., showcasing my capability to design and create effective website pages that meet specific goals and objectives.",
+    img: 'docs-b.svg',
   },
   {
     id: 'world-5',
-    imgUrl: '/planet-05.png',
-    title: 'Hawkins Labs',
+    imgUrl: 'landscape-5.png',
+    title: "MORE",
+    text: "In this, you'll find even more examples of my writing, including additional examples of blog posts, emails, advertisements, and website pages, showcasing my versatility and range as a writer.",
+    img: 'more-b.svg',
   },
 ];
 
 export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+  'Achieve outstanding results with my unparalleled speed and efficiency.',
+  'Trust in the accuracy and attention to detail of my copywriting research.',
+  'Stay ahead of the game with my commitment to continuously learning and implementing the latest industry tricks and strategies.',
 ];
 
 export const newFeatures = [
   {
-    imgUrl: '/vrpano.svg',
-    title: 'A new world',
+    imgUrl: 'gift.svg',
+    title: 'FREE 3 Copies',
     subtitle:
-        'we have the latest update with new world for you to try never mind',
+        "Test my skills with 3 free copies, no commitment. If not satisfied, no obligation to continue, but if you love it, let's boost your business with persuasive and compelling copy.",
   },
   {
-    imgUrl: '/headset.svg',
-    title: 'More realistic',
-    subtitle:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
+    imgUrl: 'shield-check.svg',
+    title: '100% Satisfaction',
+    subtitle: "I strive for 100% satisfaction with my work. If for any reason you're not completely satisfied, I'll do everything in my power to make it right.",
   },
 ];
 

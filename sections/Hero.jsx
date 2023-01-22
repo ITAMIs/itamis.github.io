@@ -22,9 +22,9 @@ const HomeImg = () => {
         transition: { duration: 8, loop: Infinity, delay: 1 },
       }}
       style={{
-        backgroundImage: "url('https://placeimg.com/640/480/any')",
+        backgroundImage: "url('/pfp4low.png')",
         width: "500px",
-        height: "400px",
+        height: "500px",
         order: "1",
         justifySelf: "center",
       }}
