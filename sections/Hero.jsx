@@ -22,7 +22,7 @@ const HomeImg = () => {
         transition: { duration: 8, loop: Infinity, delay: 1 },
       }}
       style={{
-        backgroundImage: "url('/pfp4low.png')",
+        backgroundImage: "url('/0pfp4low.png')",
         width: "500px",
         height: "500px",
         order: "1",

@@ -4,6 +4,8 @@ import { useRef, useState, useEffect } from "react";
 import styles from "../styles";
 import { navVariants } from "../utils/motion";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from 'next/link';
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -64,7 +66,7 @@ const Navbar = () => {
             <ul className="flex justify-center items-center">
               <li className="ml-6">
                 <a
-                  href="#"
+                  href="/email_page"
                   className="px-4 py-2 text-white rounded-md hover:bg-white hover:text-black active:bg-white active:text-black transition duration-200 ease-in-out"
                 >
                   Home
@@ -93,6 +95,11 @@ const Navbar = () => {
                 >
                   Contact
                 </a>
+              </li>
+              <li className="ml-6">
+                <Link href="/email_page" className="px-4 py-2 text-white rounded-md hover:bg-white hover:text-black active:bg-white active:text-black transition duration-200 ease-in-out">
+                  Email_page
+                </Link>
               </li>
             </ul>
           </div>
