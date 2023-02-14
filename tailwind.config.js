@@ -9,6 +9,13 @@ module.exports = {
   ],
   mode: 'jit',
   theme: {
+    screens: {
+      sm: '300px',
+      md: '768px',
+      lg: '992px',
+      xl: '1200px',
+      '2xl': '1800px',
+    },
     extend: {
       colors: {
         'primary-black': '#1A232E',

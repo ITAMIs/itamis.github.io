@@ -16,10 +16,10 @@ const Footer = () => (
     <div className="footer-gradient" />
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
       <div className="flex items-center justify-between flex-wrap gap-5">
-        <h4 className="font-bold md:text-[64px] text-[44px] text-white">
+        <h4 className="font-bold md:text-[44px] sm:text-[34px] text-white">
         See You Soon!
         </h4>
-        <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
+        <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#4C326C] rounded-[32px] gap-[12px]">
           <span className="font-normal text-[16px] text-white">
             sukhpalchauhan.me@gmail.com
           </span>

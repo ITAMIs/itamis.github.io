@@ -8,7 +8,7 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 
 const About = () => (
   <section className={`${styles.paddings} relative z-10`}>
-    <div className="gradient-02 z-0" />
+    <div className="gradient-02 z-0" id="about"/>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -20,7 +20,7 @@ const About = () => (
 
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
+        className="mt-[8px] font-normal sm:text-[20px] xl:text-[32px] text-[36px] text-center text-secondary-white"
       >
         <span className="font-extrabold tracking-wide text-white">
           18-year-old

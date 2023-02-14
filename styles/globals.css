@@ -107,3 +107,43 @@
 }
 
 
+.modal-open {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-img {
+  background-image: url('/0pfp4low.jpg');
+  width: 700px;
+  height: 700px;
+  order: 1;
+  justify-self: center;
+}
+
+
+
+@media (max-width: 1200px) {
+  .home-img {
+    width:  500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+.custom-font {
+  font-family: "Eudoxus Sans", sans-serif;
+  font-weight: light;
+}
+
+#sentbox_email {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 16px;
+  text-align: center;
+  border-radius: 16px;
+}

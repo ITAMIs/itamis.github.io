@@ -1,38 +1,43 @@
 export const exploreWorlds = [
   {
     id: 'world-1',
-    imgUrl: '/landscape-1.png',
+    imgUrl: '/landscape-1.jpg',
     title: 'BLOG',
     text: "In this, you'll find a couple of examples of the blogs I wrote, showcasing my ability to create engaging and informative content on a variety of topics.",
     img: 'newspaper-b.svg',
+    site: '/blogs',
   },
   {
     id: 'world-2',
-    imgUrl: '/landscape-2.png',
+    imgUrl: '/landscape-2.jpg',
     title: 'EMAIL',
     text: "In this, you'll find a couple of email examples that I wrote, displaying my skills in crafting effective and persuasive communication for various audiences.",
     img: 'mail-b.svg',
+    site: '/emails_xmp',
   },
   {
     id: 'world-3',
-    imgUrl: '/landscape-3.png',
+    imgUrl: '/landscape-3.jpg',
     title: 'ADS',
     text: "In this, you'll find a couple of Ad examples that I wrote, highlighting my proficiency in creating compelling and persuasive advertisements for various products or services.",
     img: 'mega-b.svg',
+    site: '/ads',
   },
   {
     id: 'world-4',
-    imgUrl: '/landscape-4.png',
+    imgUrl: '/landscape-4.jpg',
     title: 'PAGES',
     text: "In this, you'll find a couple of examples of different pages I wrote such as landing, sales, opt-in and etc..., showcasing my capability to design and create effective website pages that meet specific goals and objectives.",
     img: 'docs-b.svg',
+    site: '/lso_pages',
   },
   {
     id: 'world-5',
-    imgUrl: 'landscape-5.png',
+    imgUrl: 'landscape-5.jpg',
     title: "MORE",
     text: "In this, you'll find even more examples of my writing, including additional examples of blog posts, emails, advertisements, and website pages, showcasing my versatility and range as a writer.",
     img: 'more-b.svg',
+    site: '/email_page',
   },
 ];
 
