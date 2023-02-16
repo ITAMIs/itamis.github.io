@@ -112,26 +112,22 @@
 }
 
 .home-img {
-  background-image: url('/0pfp4low.jpg');
-  width: 700px;
-  height: 700px;
-  order: 1;
-  justify-self: center;
+  background-image: url('/pfp4low.jpg');
 }
 
 
 
-@media (max-width: 1200px) {
+@media (min-width: 701px) {
   .home-img {
-    width:  500px;
-    height: 500px;
+    width:  40vw;
+    height: 40vw;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .home-img {
-    width: 350px;
-    height: 350px;
+    width: 70vw;
+    height: 70vw;
   }
 }
 
@@ -146,4 +142,24 @@
   padding: 16px;
   text-align: center;
   border-radius: 16px;
+}
+
+.flex-row-skills {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.flexy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media (max-width: 700px) {
+  .flexy {
+    flex-direction: row;
+  }
 }

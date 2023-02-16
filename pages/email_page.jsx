@@ -29,6 +29,7 @@ class email_page extends React.Component {
 
   render() {
     return (
+      <section className="bg-primary-black overflow-hidden">
       <div
         className="outside-box"
         onClick={this.handleClickOutside}
@@ -59,7 +60,7 @@ class email_page extends React.Component {
               layout="position"
               style={{ fontSize: "1.5rem", fontWeight: "bold" }}
             >
-              Framer Motion 🚀
+              Site Under Construction ⚙️
             </motion.h2>
             {this.state.isOpen && (
               <motion.div
@@ -69,15 +70,12 @@ class email_page extends React.Component {
                 style={{ width: "35rem", padding: "3rem 5rem" }}
               >
                 <p style={{ paddingTop: "1rem", lineHeight: "150%" }}>
-                  Proident do culpa velit Lorem commodo est dolore minim nulla.
-                  Eiusmod dolor ullamco sunt est. Quis eu ametwho proident ex
-                  aliquip officia officia consectetur commodo. Lorem aliqua
-                  veniam sit anim elit fugiat.
+                Welcome to my website! As you can see, the site is currently under construction. I am thrilled to share with you that I made this site in just one month, without any prior coding experience. While it is still a work in progress, I am excited to bring you more content and features in the future.
                 </p>
                 <p style={{ lineHeight: "150%" }}>
-                  Voluptate reprehenderit aliquip velit eiusmod.
+                <br/> I want to assure you that this site will be worth the wait. I will be regularly adding more work to showcase my skills, and I will also be featuring testimonials from satisfied clients. <br/><br/>Thank you for your patience and understanding as I continue to develop this site. 
                 </p>
-                <button
+                {/* <button
                   className="read-more-button"
                   style={{
                     background: "teal",
@@ -88,13 +86,14 @@ class email_page extends React.Component {
                   }}
                   onClick={this.handleReadMoreClick}
                 >
-                  Read More.
-                </button>
+                  No problem.
+                </button> */}
               </motion.div>
             )}
           </motion.div>
         </AnimateSharedLayout>
       </div>
+      </section>
     );
   }
 }

@@ -60,11 +60,11 @@ function Contact() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto  my-40 w-1/3 justify-center flex-col gap-6`}
+        className=" mx-auto my-30 lg:w-1/2 w-2/3 sm:w-full justify-center flex-col gap-6"
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}
-          className=" lg:max-w-full flex  flex-col gradient-05 sm:p-8 text-center p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
+          className=" lg:max-w-full flex  flex-col gradient-05 sm:p-4  text-center p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
         >
           <div className="feedback-gradient pointer-events-none" />
           <div>
