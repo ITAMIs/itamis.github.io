@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TypingText } from "../components";
 import styles from "../styles";
 import { fadeIn, staggerContainer, zoomIn } from "../utils/motion";
 
@@ -36,7 +35,7 @@ const Skills = () => (
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="sm:w-6 sm:h-6 w-10 h-10 mr-2"
+                  className="sm:w-6 sm:h-6 md:w-10 md:h-10 mr-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -55,7 +54,7 @@ const Skills = () => (
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="sm:w-6 sm:h-6 w-10 h-10 mr-2"
+                  className="sm:w-6 sm:h-6 md:w-10 md:h-10 mr-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -72,7 +71,7 @@ const Skills = () => (
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="sm:w-6 sm:h-6 w-10 h-10 mr-2"
+                  className="sm:w-6 sm:h-6 md:w-10 md:h-10 mr-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -89,7 +88,7 @@ const Skills = () => (
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="sm:w-6 sm:h-6 w-10 h-10 mr-2"
+                  className="sm:w-6 sm:h-6 md:w-10 md:h-10 mr-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -107,7 +106,7 @@ const Skills = () => (
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="sm:w-6 sm:h-6 w-10 h-10 mr-2"
+                  className="sm:w-6 sm:h-6 md:w-10 md:h-10 mr-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -128,7 +127,7 @@ const Skills = () => (
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="sm:w-6 sm:h-6 w-10 h-10 mr-2"
+                  className="sm:w-6 sm:h-6 md:w-10 md:h-10 mr-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -145,7 +144,7 @@ const Skills = () => (
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="sm:w-6 sm:h-6 w-10 h-10 mr-2"
+                  className="sm:w-6 sm:h-6 md:w-10 md:h-10 mr-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -162,7 +161,7 @@ const Skills = () => (
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="sm:w-6 sm:h-6 w-10 h-10 mr-2"
+                  className="sm:w-6 sm:h-6 md:w-10 md:h-10 mr-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -180,7 +179,7 @@ const Skills = () => (
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="sm:w-6 sm:h-6 w-10 h-10 mr-2"
+                  className="sm:w-6 sm:h-6 md:w-10 md:h-10 mr-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -197,7 +196,7 @@ const Skills = () => (
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="sm:w-6 sm:h-6 w-10 h-10 mr-2"
+                  className="sm:w-6 sm:h-6 md:w-10 md:h-10 mr-2"
                 >
                   <path
                     strokeLinecap="round"

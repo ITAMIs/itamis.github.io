@@ -31,18 +31,19 @@ const Hero = () => (
       whileInView="show"
       transition={{ delay: 0.01 }}
       viewport={{ once: false, amount: 0.50 }}
-      className={` flex md:flex-row sm:flex-col-reverse justify-center items-center`}
+      className={` flex md:flex-row sm:flex-col-reverse  justify-center items-center`}
     >
       <motion.h1
         variants={textVariant(1.1)}
-        className={`${styles.heroHeading} sm:pr-0 md:pr-20 `}
+        className={`${styles.heroHeading} sm:pr-0 custom-font md:pr-20 `}
       >
-        <div className="md:text-4xl sm:text-2xl left-10 custom-font">
+        <div className=" custom-font">
           Hi, I'M
         </div>
         Sukhpal
         <div className="sm:text-2xl text-5xl">
           <Typewriter
+          className="custom-font"
             options={{
               autoStart: true,
               loop: true,

@@ -42,9 +42,9 @@ export const exploreWorlds = [
 ];
 
 export const startingFeatures = [
-  'Achieve outstanding results with my unparalleled speed and efficiency.',
-  'Trust in the accuracy and attention to detail of my copywriting research.',
-  'Stay ahead of the game with my commitment to continuously learning and implementing the latest industry tricks and strategies.',
+  'I can achieve outstanding results with unparalleled speed and efficiency.',
+  'You can trust in the accuracy and attention to detail of my copywriting research.',
+  'You will stay ahead of the game with my commitment to continuously learning and implementing the latest industry tricks and strategies.',
 ];
 
 export const newFeatures = [
