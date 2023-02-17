@@ -55,7 +55,6 @@ const Navbar = () => {
     },
   };
 
-
   return (
     <motion.nav
       variants={navVariants}
@@ -65,8 +64,11 @@ const Navbar = () => {
       className={`${styles.xPaddings} py-8  relative flex items-center justify-between`}
     >
       <div className={`${styles.innerWidth} mx-auto flex items-center gap-8`}>
-
-          <img src="/sukhpal_logo.png" alt="Logo" className="md:h-20 sm:h-12 md:mr-4 sm:mr-0  ml-auto sm:block sm:items-end"/>
+        <img
+          src="/sukhpal_logo.png"
+          alt="Logo"
+          className="md:h-20 sm:h-12 md:mr-4 sm:mr-0  ml-auto sm:block sm:items-end"
+        />
 
         {isMobile ? (
           <img
@@ -142,22 +144,38 @@ const Navbar = () => {
                 />
                 <ul className="flex flex-col text-center">
                   <li className="my-4">
-                    <Link href="/" className="text-black" onClick={() => setMenuOpen(false)}>
+                    <Link
+                      href="/"
+                      className="text-black"
+                      onClick={() => setMenuOpen(false)}
+                    >
                       Home
                     </Link>
                   </li>
                   <li className="my-4">
-                    <Link href="#about" className="text-black" onClick={() => setMenuOpen(false)}>
+                    <Link
+                      href="#about"
+                      className="text-black"
+                      onClick={() => setMenuOpen(false)}
+                    >
                       About
                     </Link>
                   </li>
                   <li className="my-4">
-                    <Link href="#explore" className="text-black" onClick={() => setMenuOpen(false)}>
+                    <Link
+                      href="#explore"
+                      className="text-black"
+                      onClick={() => setMenuOpen(false)}
+                    >
                       Work
                     </Link>
                   </li>
                   <li className="my-4">
-                    <Link href="#contact" className="text-black" onClick={() => setMenuOpen(false)}>
+                    <Link
+                      href="#contact"
+                      className="text-black"
+                      onClick={() => setMenuOpen(false)}
+                    >
                       Contact
                     </Link>
                   </li>

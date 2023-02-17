@@ -1,12 +1,13 @@
 import Head from 'next/head';
-import email_page from './email_page';
+import EmailPage from './email_page';
 import '../styles/globals.css';
-import emails_xmp from './emails_xmp';
+import EmailsXmp from './emails_xmp';
 import { Navbar } from '../components';
+
 const MyApp = ({ Component, pageProps }) => (
   <>
     <div className="bg-primary-black overflow-hidden">
-    <Navbar/>
+      <Navbar />
     </div>
     <Head>
       <title>Sukhpal</title>
@@ -15,8 +16,8 @@ const MyApp = ({ Component, pageProps }) => (
       <link rel="preconnect" href="https://stijndv.com" />
       <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
     </Head>
-    <email_page />
-    <emails_xmp/>
+    <EmailPage />
+    <EmailsXmp />
     <Component {...pageProps} />
   </>
 );

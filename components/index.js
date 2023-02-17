@@ -5,7 +5,6 @@ import StartSteps from './StartSteps';
 import NewFeatures from './NewFeatures';
 import Footer from './Footer';
 
-
 export {
   Navbar,
   TitleText,

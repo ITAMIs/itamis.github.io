@@ -1,10 +1,8 @@
-"use client";
-
-import { motion } from "framer-motion";
-import styles from "../styles";
-import { fadeIn } from "../utils/motion";
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import styles from '../styles';
+import { fadeIn } from '../utils/motion';
 
 const ExploreCard = ({
   id,
@@ -18,9 +16,9 @@ const ExploreCard = ({
   handleClick,
 }) => (
   <motion.div
-    variants={fadeIn("right", "spring", index * 0.4, 1)}
+    variants={fadeIn('right', 'spring', index * 0.4, 1)}
     className={`relative ${
-      active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
+      active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
     } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
@@ -34,8 +32,8 @@ const ExploreCard = ({
         {title}
       </h3>
     ) : (
-      <div className="flex-col absolute  h-full w-full">
-        <motion.div whileHover={{ scale: 1.1 }} className=" sm:h-2/3 sb:h-2/3 md:h-full inset-0 flex items-center justify-center  ">
+      <div className="flex-col absolute h-full w-full">
+        <motion.div whileHover={{ scale: 1.1 }} className="sm:h-2/3 sb:h-2/3 md:h-full inset-0 flex items-center justify-center">
           <Link href={site}>
             <div className="flexy">
               <div
@@ -47,7 +45,6 @@ const ExploreCard = ({
                   className="md:h-[96px] md:w-[96px] sm:h-[64px] sm:w-[64px]"
                 />
               </div>
-
               <h2 className="pl-2 text-center md:flex-row sm:flex-col font-semibold sm:text-[32px] text-[24px] text-white">
                 {title}
               </h2>
@@ -55,8 +52,8 @@ const ExploreCard = ({
           </Link>
         </motion.div>
 
-        <div className=" absolute bottom-0  justify-end  md:p-8 sm:p-2 left-0  w-full bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
-          <p className=" font-normal relative m-1 tracking-wide md:text-[16px] sm:text-[9.5px] sb:text-[12px] leading-[20.16px] text-white">
+        <div className="absolute bottom-0 justify-end md:p-8 sm:p-2 left-0 w-full bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
+          <p className="font-normal relative m-1 tracking-wide md:text-[16px] sm:text-[9.5px] sb:text-[12px] leading-[20.16px] text-white">
             {text}
           </p>
         </div>
