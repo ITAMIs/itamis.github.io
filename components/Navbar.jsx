@@ -1,5 +1,3 @@
-"use client";
-
 import { useRef, useState, useEffect, useCallback } from "react";
 import styles from "../styles";
 import { navVariants } from "../utils/motion";
@@ -61,13 +59,13 @@ const Navbar = () => {
       initial="hidden"
       ref={wrapperRef}
       whileInView="show"
-      className={`${styles.xPaddings} py-8  relative flex items-center justify-between`}
+      className={`${styles.xPaddings} py-8 relative flex items-center justify-between`}
     >
       <div className={`${styles.innerWidth} mx-auto flex items-center gap-8`}>
         <img
           src="/sukhpal_logo.png"
           alt="Logo"
-          className="md:h-20 sm:h-12 md:mr-4 sm:mr-0  ml-auto sm:block sm:items-end"
+          className="md:h-20 sm:h-12 md:mr-4 sm:mr-0 ml-auto sm:block sm:items-end"
         />
 
         {isMobile ? (
