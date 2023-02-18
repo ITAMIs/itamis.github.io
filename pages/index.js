@@ -1,4 +1,6 @@
-import Footer from '../components';
+'use client';
+
+import { Footer } from '../components';
 import { About, Contact, Explore, GetStarted, Hero, Skills, WhatsNew } from '../sections';
 
 const Home = () => (

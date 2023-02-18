@@ -13,7 +13,7 @@ export const exploreWorlds = [
     title: 'EMAIL',
     text: "In this, you'll find a couple of email examples that I wrote, displaying my skills in crafting effective and persuasive communication for various audiences.",
     img: 'mail-b.svg',
-    site: '/emails_xmp',
+    site: '/EmailsXmp',
   },
   {
     id: 'world-3',
@@ -29,7 +29,7 @@ export const exploreWorlds = [
     title: 'PAGES',
     text: "In this, you'll find a couple of examples of different pages I wrote such as landing, sales, opt-in and etc..., showcasing my capability to design and create effective website pages that meet specific goals and objectives.",
     img: 'docs-b.svg',
-    site: '/lso_pages',
+    site: '/LsoPages',
   },
   {
     id: 'world-5',
@@ -37,7 +37,7 @@ export const exploreWorlds = [
     title: "MORE",
     text: "In this, you'll find even more examples of my writing, including additional examples of blog posts, emails, advertisements, and website pages, showcasing my versatility and range as a writer.",
     img: 'more-b.svg',
-    site: '/email_page',
+    site: '/MorePage',
   },
 ];
 

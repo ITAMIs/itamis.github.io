@@ -1,6 +1,8 @@
+'use client';
+
 import Head from 'next/head';
 import '../styles/globals.css';
-import Navbar from '../components';
+import { Navbar } from '../components';
 
 const MyApp = ({ Component, pageProps }) => (
   <>

@@ -1,8 +1,10 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 
-const lsoPages = () => (
+const LsoPages = () => (
   <section className={`${styles.paddings} bg-primary-black overflow-hidden`}>
     <div className="flex items-center justify-center mb-20">
       <div className="flex flex-col px-4 mr-10">
@@ -70,4 +72,4 @@ const lsoPages = () => (
   </section>
 );
 
-export default lsoPages;
+export default LsoPages;
