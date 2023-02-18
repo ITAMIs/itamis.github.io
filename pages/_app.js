@@ -1,8 +1,6 @@
 import Head from 'next/head';
-import EmailPage from './email_page';
 import '../styles/globals.css';
-import EmailsXmp from './emails_xmp';
-import { Navbar } from '../components';
+import Navbar from '../components';
 
 const MyApp = ({ Component, pageProps }) => (
   <>

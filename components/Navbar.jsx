@@ -1,8 +1,8 @@
-import { useRef, useState, useEffect, useCallback } from "react";
-import styles from "../styles";
-import { navVariants } from "../utils/motion";
-import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
+import { useRef, useState, useEffect, useCallback } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
+import styles from '../styles';
+import { navVariants } from '../utils/motion';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,8 +14,8 @@ const Navbar = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 680);
     };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const handleClickOutside = useCallback(
@@ -24,12 +24,12 @@ const Navbar = () => {
         setMenuOpen(false);
       }
     },
-    [setMenuOpen]
+    [setMenuOpen],
   );
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [handleClickOutside]);
 
   const linksVariants = {
@@ -37,16 +37,16 @@ const Navbar = () => {
       x: 0,
       transition: {
         delay: 0.1,
-        type: "spring",
+        type: 'spring',
         stiffness: 150,
         damping: 20,
       },
     },
     closed: {
-      x: "-130%",
+      x: '-130%',
       transition: {
         delay: 0.1,
-        type: "spring",
+        type: 'spring',
         stiffness: 150,
         damping: 20,
       },
@@ -73,7 +73,7 @@ const Navbar = () => {
             src="/menu.svg"
             alt="menu"
             className={`w-24px h-24px object-contain top-10 left-10 rotate-0 cursor-pointer sm:text-center sm:w-5 sm:h-5 sm:absolute  ${
-              menuOpen ? "hidden" : ""
+              menuOpen ? 'hidden' : ''
             }`}
             onClick={() => setMenuOpen(!menuOpen)}
           />
@@ -119,14 +119,14 @@ const Navbar = () => {
         <AnimatePresence>
           {menuOpen && isMobile && (
             <motion.nav
-              className={` z-50 bg-white  rounded-md py-2 px-3 fixed top-8 left-0  flex items-center justify-center`}
+              className="z-50 bg-white  rounded-md py-2 px-3 fixed top-8 left-0  flex items-center justify-center"
               initial="closed"
               animate="open"
               exit={{
-                x: "-130%",
+                x: '-130%',
                 transition: {
                   delay: 0.1,
-                  type: "spring",
+                  type: 'spring',
                   stiffness: 150,
                   damping: 20,
                 },

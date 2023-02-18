@@ -13,20 +13,15 @@ class EmailPage extends React.Component {
 
   handleClickOutside(event) {
     if (
-      event.target.className === 'outside-box' ||
-      event.target.className === 'read-more-button'
+      event.target.className === 'outside-box'
+      || event.target.className === 'read-more-button'
     ) {
       this.setState({ isOpen: false });
     }
   }
 
-  handleReadMoreClick(e) {
-    e.stopPropagation();
-    // Code to open the link
-    window.open('https://www.example.com', '_blank');
-  }
-
   render() {
+    const { isOpen } = this.state; // destructuring state assignment
     return (
       <section className="bg-primary-black overflow-hidden">
         <div
@@ -61,7 +56,7 @@ class EmailPage extends React.Component {
               >
                 Site Under Construction ⚙️
               </motion.h2>
-              {this.state.isOpen && (
+              {isOpen && ( // using the destructured variable
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -99,3 +94,4 @@ class EmailPage extends React.Component {
 }
 
 export default EmailPage;
+
